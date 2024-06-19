@@ -2,25 +2,35 @@
 
 @section('content')
 <div class="container">
-    <h2 class="fs-4 text-secondary my-4">
-        {{ __('Dashboard') }}
-    </h2>
-    <div class="row justify-content-center">
-        <div class="col">
-            <div class="card">
-                <div class="card-header">{{ __('User Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
-                    </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
+    <div class="text-center">
+    da qui potrai gestire tutte le programmazioni dei film
     </div>
+</div>
+<div class="d-flex text-center">
+    <ul class="d-flex text-center">
+        <li class="button-admin">
+            <a href="http://127.0.0.1:8000/rooms">
+            <button type="button" class="btn btn-secondary">gestisci le sale</button>
+            </a>
+        </li>
+        <li class="button-admin">
+            <a href="http://127.0.0.1:8000/movies">
+            <button type="button" class="btn btn-secondary">gestisci i film</button>
+            </a>
+        </li>
+        </ul>
+        <br>
+        <ul class="d-flex">
+        <li class="button-admin">
+            <a href="http://127.0.0.1:8000/screenings">
+            <button type="button" class="btn btn-secondary">gestici le proiezioni</button>
+            </a>
+        </li>
+        <li class="button-admin">
+            <a href="http://127.0.0.1:8000/reviews">
+            <button type="button" class="btn btn-secondary">gestisci i commenti</button>
+            </a>
+        </li>
+    </ul>
 </div>
 @endsection

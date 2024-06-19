@@ -72,6 +72,14 @@ return [
 
     'timezone' => 'UTC',
 
+
+    'time_slots' => [
+        '17-19' => 'Pomeriggio',
+        '19-21' => 'Sera',
+        '21-23' => 'Notte',
+    ],
+
+
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
